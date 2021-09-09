@@ -23,7 +23,7 @@ const Overlay = styled.div`
   &.overlay-first {
     animation: ${ScaleY} 0.8s ease-in-out;
     transform-origin: top;
-    z-index: 9;
+    z-index: 10;
     position: fixed;
     left: 0;
     top: 0;
@@ -34,7 +34,6 @@ const Overlay = styled.div`
     border-right: 2px solid var(--color-dark);
     background-color: var(--color-bg);
     &::before {
-      z-index: 10;
       animation: ${ScaleX} 0.5s ease-in-out;
       animation-delay: 0.8s;
       content: "";
@@ -46,7 +45,6 @@ const Overlay = styled.div`
       right: 10vw;
     }
     &::after {
-      z-index: 10;
       animation: ${ScaleX} 0.5s ease-in-out;
       animation-delay: 0.8s;
       content: "";
