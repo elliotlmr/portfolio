@@ -1,13 +1,57 @@
+@font-face {
+  font-family: "Orbitron-B";
+  src: url(./fonts/orbitron-bold.otf);
+}
+
+@font-face {
+  font-family: "Orbitron-M";
+  src: url(./fonts/orbitron-medium.otf);
+}
+
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg);
+  scroll-behavior: smooth;
+
+  --color-bg: #fcbc55; /*rgb(253, 212, 122);*/
+  --color-light: rgb(247, 222, 168);
+  --color-dark: /*#3d331d;*/ #241f14;
+  --color-dark-soft: rgba(36, 31, 20, 0.6);
+  --color-brown: #6e5e3c;
+  --color-blue: #315eb0;
+  overflow-x: hidden;
+  font-family: "Orbitron-M", Arial, Helvetica, sans-serif;
+  color: var(--color-dark);
+}
+
+#root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dark-soft);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
