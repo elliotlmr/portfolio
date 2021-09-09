@@ -170,6 +170,7 @@ const LinkButton = styled.a`
 `;
 
 const ProjectsContainer = styled.div`
+  transition: all 0.3s ease-in-out;
   transform: translateY(20%);
   opacity: 0;
   position: relative;
